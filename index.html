@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="/MOD6CHALL/style.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="search-bar">
+        <label for="city-search">Search for a city:</label>
+        <input type="text" id="city-search" placeholder="Enter city name">
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="popular-cities">
+        <h2>Popular Cities</h2>
+        <!-- Popular cities list will be dynamically generated -->
+        <ul id="popular-cities-list"></ul>
+      </div>
+      <div class="search-history">
+        <h2>Search History</h2>
+        <!-- Search history will be dynamically generated -->
+        <ul id="search-history-list"></ul>
+      </div>
+    </aside>
+    <main>
+      <div class="city-info-container">
+        <!-- City information will be displayed here -->
+      </div>
+      <div class="forecast-container">
+        <h2>5-Day Forecast</h2>
+        <div class="forecast">
+          <!-- 5-day forecast will be dynamically generated -->
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/MOD6CHALL/script.js"></script>
+</body>
+</html>

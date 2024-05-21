@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Adjust width as needed */
+    background-color: #f2f2f2;
+    padding: 20px;
+    z-index: 1; /* Ensure sidebar is above header */
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  main {
+    margin-left: 250px; /* Match the width of the sidebar */
+    padding: 20px;
+    padding-top: 80px; /* Add space for the header */
+  }
+  
+  .search-bar label {
+    display: block;
+  }
+  
+  .search-bar input[type="text"] {
+    width: calc(100% - 80px);
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .popular-cities,
+  .search-history {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  .forecast-item {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .forecast-item h3 {
+    margin-bottom: 10px;
+  }
+  
+  .forecast-item img {
+    margin-bottom: 10px;
+  }
+  .forecast {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .forecast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
